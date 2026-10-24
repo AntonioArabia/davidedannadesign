@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEOMETA-->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-line"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar hidden">
+        <a href="/" class="logo">DD</a>
+        <div class="nav-links">
+            <a href="/#work">Lavori</a>
+            <a href="/#about">Chi sono</a>
+            <a href="/#contact">Contatti</a>
+        </div>
+    </nav>
+
+    <!-- Project content (rendered by js/project.js) -->
+    <div id="project-shell"></div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
+        <button class="lightbox-close" aria-label="Chiudi">&times;</button>
+        <button class="lightbox-prev" aria-label="Immagine precedente">&#8592;</button>
+        <img src="" alt="">
+        <button class="lightbox-next" aria-label="Immagine successiva">&#8594;</button>
+        <div class="lightbox-caption"></div>
+        <span class="lightbox-counter"></span>
+    </div>
+
+    <!-- Custom cursor -->
+    <div id="cursor" class="cursor"></div>
+    <div id="cursor-follower" class="cursor-follower"></div>
+
+    <script>window.API_BASE = window.API_BASE || '';</script>
+    <script src="/js/common.js"></script>
+    <script src="/js/project.js"></script>
+</body>
+</html>
